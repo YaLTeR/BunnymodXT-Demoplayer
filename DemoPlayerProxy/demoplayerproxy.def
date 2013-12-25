@@ -1,0 +1,3 @@
+LIBRARY "DemoPlayer"
+EXPORTS
+CreateInterface = FakeCreateInterface @1

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\HLSDK">
+      <UniqueIdentifier>{704c4e5c-acb4-45b8-822c-9f78321e8815}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="conutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="memutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="demoplayerproxy.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="conutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="memutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSDK\cdll_int.h">
+      <Filter>Header Files\HLSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSDK\const.h">
+      <Filter>Header Files\HLSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSDK\in_buttons.h">
+      <Filter>Header Files\HLSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSDK\util_vector.h">
+      <Filter>Header Files\HLSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSDK\wrect.h">
+      <Filter>Header Files\HLSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSDK\crc.h">
+      <Filter>Header Files\HLSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSDK\custom.h">
+      <Filter>Header Files\HLSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSDK\cvardef.h">
+      <Filter>Header Files\HLSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSDK\edict.h">
+      <Filter>Header Files\HLSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSDK\eiface.h">
+      <Filter>Header Files\HLSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="HLSDK\progdefs.h">
+      <Filter>Header Files\HLSDK</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
