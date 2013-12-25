@@ -1,4 +1,4 @@
-BunnymodXT
+Bunnymod XT
 ==========
 
 Bunnymod for Half-Life mods.
