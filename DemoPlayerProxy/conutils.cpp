@@ -5,7 +5,7 @@ namespace ConUtils
 	HANDLE hConsoleOutput;
 	WORD wStandartAttributes;
 
-	void ConUtils::Init()
+	void Init()
 	{
 		AllocConsole();
 		hConsoleOutput = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -23,29 +23,29 @@ namespace ConUtils
 		ShowWindow(GetConsoleWindow(), SW_MINIMIZE);
 	}
 
-	void ConUtils::Free()
+	void Free()
 	{
 		FreeConsole();
 	}
 
-	void ConUtils::Log(const char *szText)
+	void Log(const char *szText)
 	{
 		WriteConsoleA(hConsoleOutput, szText, strlen(szText), NULL, NULL);
 	}
 
-	void ConUtils::Log(const char *szText, WORD wAttributes)
+	void Log(const char *szText, WORD wAttributes)
 	{
 		SetConsoleTextAttribute(hConsoleOutput, wAttributes);
 		WriteConsoleA(hConsoleOutput, szText, strlen(szText), NULL, NULL);
 		SetConsoleTextAttribute(hConsoleOutput, wStandartAttributes);
 	}
 
-	void ConUtils::Log(const WCHAR *szText)
+	void Log(const WCHAR *szText)
 	{
 		WriteConsole(hConsoleOutput, szText, wcslen(szText), NULL, NULL);
 	}
 
-	void ConUtils::Log(const WCHAR *szText, WORD wAttributes)
+	void Log(const WCHAR *szText, WORD wAttributes)
 	{
 		SetConsoleTextAttribute(hConsoleOutput, wAttributes);
 		WriteConsole(hConsoleOutput, szText, wcslen(szText), NULL, NULL);

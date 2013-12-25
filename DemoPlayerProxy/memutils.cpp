@@ -6,7 +6,7 @@
 
 namespace MemUtils
 {
-	bool MemUtils::GetModuleInfo(const WCHAR *szModuleName, size_t &moduleBase, size_t &moduleSize)
+	bool GetModuleInfo(const WCHAR *szModuleName, size_t &moduleBase, size_t &moduleSize)
 	{
 		HANDLE hProcess = GetCurrentProcess();
 		HMODULE hModule = GetModuleHandle(szModuleName);
@@ -25,7 +25,7 @@ namespace MemUtils
 		return true;
 	}
 
-	bool MemUtils::GetModuleInfo(HMODULE hModule, size_t &moduleBase, size_t &moduleSize)
+	bool GetModuleInfo(HMODULE hModule, size_t &moduleBase, size_t &moduleSize)
 	{
 		HANDLE hProcess = GetCurrentProcess();
 
@@ -43,7 +43,7 @@ namespace MemUtils
 		return true;
 	}
 
-	inline bool MemUtils::DataCompare(const BYTE *pData, const BYTE *pSig, const char *szPattern)
+	inline bool DataCompare(const BYTE *pData, const BYTE *pSig, const char *szPattern)
 	{
 		for ( ; *szPattern != NULL; ++pData, ++pSig, ++szPattern)
 		{
@@ -56,7 +56,7 @@ namespace MemUtils
 		return (*szPattern == NULL);
 	}
 
-	DWORD MemUtils::FindPattern(DWORD dwStart, DWORD dwLength, BYTE *pSig, const char *szMask)
+	DWORD FindPattern(DWORD dwStart, DWORD dwLength, BYTE *pSig, const char *szMask)
 	{
 		for (DWORD i = NULL; i < dwLength; i++)
 		{
