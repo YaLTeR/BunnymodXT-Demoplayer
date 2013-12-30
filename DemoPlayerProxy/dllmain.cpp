@@ -35,6 +35,7 @@ BOOL APIENTRY DllMain( HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpRese
     {
     case DLL_PROCESS_ATTACH:
         ConUtils::Init();
+        ConUtils::Log("Bunnymod XT v0.1\n", FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_INTENSITY);
 
         GetModuleFileName(hModule, filename, sizeof(filename));
         wcsncpy(original_dll, filename, wcslen(filename) - 4);
