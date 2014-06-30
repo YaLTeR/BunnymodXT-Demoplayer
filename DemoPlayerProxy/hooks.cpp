@@ -94,7 +94,7 @@ namespace Hooks
             SERVER_OriginalGiveFnptrsToDll(pengfuncsFromEngine, pGlobals);
 
             Hooks::Server::HookBhopCap();
-            Hooks::Server::HookAutojump();
+            //Hooks::Server::HookAutojump();
         }
     }
 
@@ -632,7 +632,7 @@ namespace Hooks
 
         Hooks::Client::HookEngfuncs();
         Hooks::Client::HookBhopCap();
-        Hooks::Client::HookAutojump();
+        //Hooks::Client::HookAutojump();
     }
 
     void HookServerDLL()
@@ -656,7 +656,7 @@ namespace Hooks
 
             server_dll.pEngfuncs = NULL;
             Hooks::Server::HookBhopCap();
-            Hooks::Server::HookAutojump();
+            //Hooks::Server::HookAutojump();
 
             return;
         }
@@ -677,7 +677,7 @@ namespace Hooks
 
             server_dll.pEngfuncs = NULL;
             Hooks::Server::HookBhopCap();
-            Hooks::Server::HookAutojump();
+            //Hooks::Server::HookAutojump();
         }
     }
 
@@ -704,7 +704,7 @@ namespace Hooks
 
             server_dll.pEngfuncs = NULL;
             Hooks::Server::HookBhopCap();
-            Hooks::Server::HookAutojump();
+            //Hooks::Server::HookAutojump();
         }
     }
 }

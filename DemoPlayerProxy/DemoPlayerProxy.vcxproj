@@ -42,15 +42,15 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>C:\Games\Half-Life\</OutDir>
     <TargetName>DemoPlayer</TargetName>
-    <IncludePath>C:\Tools\Detours\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Tools\Detours\lib.X86;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\Tools\Source\Detours\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Tools\Source\Detours\lib.X86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>C:\Games\Half-Life\</OutDir>
     <TargetName>DemoPlayer</TargetName>
-    <IncludePath>C:\Tools\Detours\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Tools\Detours\lib.X86;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\Tools\Source\Detours\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Tools\Source\Detours\lib.X86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
